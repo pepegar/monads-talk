@@ -368,7 +368,7 @@ We only need to review our interpreter...
 
 ---
 
-# new interpreter
+# New interpreter
 
 ```scala
 def ioInterp[A](op: IO[A]): A = op match {
@@ -381,3 +381,35 @@ def ioInterp[A](op: IO[A]): A = op match {
 
 ---
 
+# And, combine!
+
+```scala
+ioInterp(pureHello()) // this actually does IO
+                      // thanks to the interpreter
+```
+
+---
+
+# Small recap
+
+* Functional programming is cool
+* Typeclasses are here to help
+* Monad is for imperative programming
+* Monads + Interpreters = WIN!
+
+---
+
+# We are done, 
+# thanks!
+
+@jlgarhdez
+
+---
+
+# meetup.com/FP-Madrid/
+
+---
+
+# meetup.com/Haskell-MAD/
+
+![Haskell Mad](./images/logo-haskell.png)
